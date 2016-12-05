@@ -12,6 +12,7 @@ A probable use-case is to create an endpoint that returns the datasource as JSON
     - data-only (false) - Only return the content node
     - minified (false) - Filter away the location, binaries and relatedcontentkeys nodes in the content node
     - contentdata-only (false) - Only return the data in the contentdata, which is the data entered by an editor in the content form
+2. Note that you have to use a page template which returns a JSON document, not any normal template that returns HTML. It may be possible to get just the portlet-document, though, but this has not been tested...
 
 ## Open source
 This code is licenced under the MIT licence, which basically means "help yourself". The code has been tested a while in production, but there are some edge-cases that are not handled. (Though they have not been encountered in Enonic CMS 4.7 so far.)
